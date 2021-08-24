@@ -1,0 +1,165 @@
+* {
+    /* outline: 1px solid red; */
+}
+
+.page {
+    display: flex;
+}
+
+/* 左半部 */
+.photo {
+    display: inline-block;
+    /* width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    overflow: hidden; */
+}
+
+.photo img {
+    object-fit: cover;
+    /* width: 100%; */
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.personal>a {
+    color: black;
+}
+
+.personal div {
+    margin-bottom: 20px;
+}
+
+.personal h4 {
+    margin: 10px 0 20px 0;
+}
+
+.member_level {
+    background-color: #fa8873;
+    color: white;
+    border-radius: 20px 20px;
+    display: inline;
+    padding: 5px 20px;
+    width: 20%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 右半部 */
+.main a {
+    color: black;
+}
+
+.bar i {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+/* bar */
+.bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.bar a {
+    align-self: flex-end;
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin-left: 30%;
+}
+
+/* 評價上方提示框 */
+.order_intro .box {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffe1ce;
+}
+
+/* 尚未/已評價標題 */
+.main h4 {
+    text-align: center;
+}
+
+/* 評價卡片 */
+.com_card1 {
+    background-color: white;
+    width: 100%;
+    height: 35vh;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.com_card1 h5 {
+    padding: 20px 0 0 20px;
+}
+
+.com_card_photo {
+    float: left;
+    width: 20%;
+
+}
+
+.com_card_photo img {
+    width: 20vh;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+.com_card_intro {
+    float: right;
+    /* width: 80%; */
+}
+
+.com_card_intro p {
+    text-align: center;
+
+}
+
+/* 星級 */
+.un_stars {
+    color: gray;
+}
+
+.un_stars p {
+    padding-right: 40px;
+}
+
+.in_stars p {
+    padding-right: 40px;
+    color: grey;
+}
+
+.in_stars .act_star {
+    color: #ffb0a2;
+}
+
+/* 評價按鈕 */
+.btn_com_send {
+    padding: 2px 50px;
+    box-shadow: 0 10px 20px #cacaca;
+}
+
+.com_card_bottom {
+    margin-top: 10px;
+}
+
+.com_card_bottom a {
+    color: grey;
+    margin-left: 60px;
+}
