@@ -132,21 +132,37 @@ form {
 }
 
 /* 星級 */
-.un_stars {
+.give_stars p{
     color: gray;
 }
 
-.un_stars p {
-    padding-right: 40px;
+.stars li {
+    display: inline-block;
+    color: #adadad;
+    font-size: 40px;
+    cursor: pointer;
+    list-style: none;
 }
 
-.in_stars p {
-    padding-right: 40px;
-    color: grey;
+span::before {
+    content: "您給出了";
 }
+span::after {
+    content: "顆星";
+}
+/* .stars ul{
+    list-style: none;
+} */
+/* span::before {
+    content: "您給出了";
+}
+span::after {
+    content: "顆星";
+} */
 
-.in_stars .act_star {
-    color: #ffb0a2;
+
+.give_stars p {
+    padding-right: 40px;
 }
 
 /* 評價按鈕 */

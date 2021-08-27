@@ -474,46 +474,51 @@
                             </div>
                             <div class="com_card-intro">
                                 <h5>快速評論</h5>
-                                <div class="un_stars">
+                                <div class="give_stars">
                                     <div class="d-flex row">
-                                        <p>續航力：
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                        <p>續航力：
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                        <p>續航力：
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
+                                        <p>續航力： </p>
+                                        <ul class="stars row" style="list-style: none;">
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                        </ul>
+
+
+                                        <p>續航力：</p>
+                                        <ul class="stars row" style="list-style: none;">
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                        </ul>
+
                                     </div>
+
                                     <div class="d-flex row">
-                                        <p>續航力：
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                        <p>續航力：
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
+                                        <p>續航力： </p>
+                                        <ul class="stars row" style="list-style: none;">
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                        </ul>
+
+
+                                        <p>續航力：</p>
+                                        <ul class="stars row" style="list-style: none;">
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                            <li>★</li>
+                                        </ul>
+
                                     </div>
+
 
                                     <div class="com_card_bottom">
                                         <button type="button" class="btn btn_com_send">送出</button>
@@ -792,7 +797,7 @@
         <p>TOP</p>
     </button>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- JQ ----------------------------------->
     <script>
         // btn_toTop ----------------------------------
@@ -998,6 +1003,44 @@
             $('.lv3-5').addClass('d-none');
             $('.lv2-5>p').css('color', '#5a5a5a');
         });
+
+
+
+
+        let isClicked = false;
+
+        // hover星星
+        $('.stars li').hover(
+            function() {
+                if (!isClicked) {
+                    let index = $(this).index();
+                    // 依序將星星變成黃色
+                    for (let i = 0; i <= index; i++) {
+                        $('.stars li').eq(i).css('color', '#f0ad4e');
+                    }
+                }
+            },
+            function() {
+                // 滑鼠移開時變回灰色
+                if (!isClicked) {
+                    $('.stars li').css('color', '#adadad');
+                }
+            }
+        );
+
+        // 點擊星星
+        $('.stars li').click(function() {
+            isClicked = true;
+            $('.stars li').css('color', '#adadad');
+            let index = $(this).index();
+            let value = ($(this).index()) + 1;
+            // 依序將星星變成黃色
+            for (let i = 0; i <= index; i++) {
+                $('.stars li').eq(i).css('color', '#f0ad4e');
+            }
+            // 顯示給予星星數
+            $('span').text(value);
+        })
     </script>
 
 </body>
