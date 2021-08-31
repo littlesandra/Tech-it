@@ -469,87 +469,21 @@
                         </div>
                         <div class="card-intro">
                             <div class="card1">
-                                <!-- 暫時用 再修正 -->
-                                <br>
-                                <br>
+
                                 <p>訂單編號：0531093022122</p>
                                 <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p>
                                 <br>
                                 <div class="to-com">
-                                    <div class="d-flex justify-content-between">
+                                    <div class="d-flex justify-content-between align-center">
                                         <p>訂單成立時間：2021 / 05 / 31</p>
-                                        <button type="button" class="btn btn-to-com">評論</button>
+                                        <button type="button" class="btn btn-to-com gotocomment">評論</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="order_card">
-                        <div class="card_photo">
-                            <img src="./img/212008_M1.jpeg">
-                        </div>
-                        <div class="card-intro">
-                            <div class="card1">
-                                <!-- 暫時用 再修正 -->
-                                <br>
-                                <br>
-                                <p>訂單編號：0531093022122</p>
-                                <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p>
-                                <br>
-                                <div class="to-com">
-                                    <div class="d-flex justify-content-between">
-                                        <p>訂單成立時間：2021 / 05 / 31</p>
-                                        <button type="button" class="btn btn-to-com">評論</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="order_card">
-                        <div class="card_photo">
-                            <img src="./img/212008_M1.jpeg">
-                        </div>
-                        <div class="card-intro">
-                            <div class="card1">
-                                <!-- 暫時用 再修正 -->
-                                <br>
-                                <br>
-                                <p>訂單編號：0531093022122</p>
-                                <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p>
-                                <br>
-                                <div class="to-com">
-                                    <div class="d-flex justify-content-between">
-                                        <p>訂單成立時間：2021 / 05 / 31</p>
-                                        <button type="button" class="btn btn-to-com">評論</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="order_card">
-                        <div class="card_photo">
-                            <img src="./img/212008_M1.jpeg">
-                        </div>
-                        <div class="card-intro">
-                            <div class="card1">
-                                <!-- 暫時用 再修正 -->
-                                <br>
-                                <br>
-                                <p>訂單編號：0531093022122</p>
-                                <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p>
-                                <br>
-                                <div class="to-com">
-                                    <div class="d-flex justify-content-between">
-                                        <p>訂單成立時間：2021 / 05 / 31</p>
-                                        <button type="button" class="btn btn-to-com">評論</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -557,26 +491,7 @@
         </div>
 
 
-        <!-- ↑↑↑ 內容結束 ↑↑↑ -->
-        <div class="moblie_part">
-            <div class="card_center">
-                <img src="./img/1.jpeg" alt="">
-                <div class="r_rpart">
-                    <a class="m_button2 mr-2"><img src="./img/icon_saved.svg" alt="">
-                        收藏</a>
 
-                    <a class="m_button2 mr-2"><img src="./img/icon_compare-list.svg" alt="">
-                        比較</a>
-
-                    <div class="m_rpart">
-                        <div class="m_price mb-3">$$$$PHP</div>
-                        <button class="m_button1"><img src="./img/icon_shopping-cart.svg" alt="">
-                            加入購物車</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
     </div>
     <!-- 在這裡結束網頁撰寫 ----------------------->
@@ -646,6 +561,12 @@
 
     <!-- JQ ----------------------------------->
     <script>
+        $(".gotocomment").click(function() {
+            location.href = 'member_info4.php';
+        });
+
+
+
         // btn_toTop ----------------------------------
         $(".btn_toTop").click(function() {
             $("html, body").animate({

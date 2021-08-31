@@ -1,15 +1,15 @@
-* {
-    /* outline: 1px solid red; */
+p,
+ul {
+  margin: 0px;
 }
-
 .page {
-    display: flex;
+  display: flex;
 }
 
 /* 左半部 */
 .photo {
-    display: inline-block;
-    /* width: 200px;
+  display: inline-block;
+  /* width: 200px;
     height: 200px;
     border: 1px solid gray;
     border-radius: 50%;
@@ -17,139 +17,131 @@
 }
 
 .photo img {
-    object-fit: cover;
-    /* width: 100%; */
-    width: 200px;
-    height: 200px;
-    border: 1px solid gray;
-    border-radius: 50%;
+  object-fit: cover;
+  /* width: 100%; */
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  border-radius: 50%;
 }
 
 .personal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.personal>a {
-    color: black;
+.personal > a {
+  color: black;
 }
 
 .personal div {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .personal h4 {
-    margin: 10px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 .member_level {
-    background-color: #fa8873;
-    color: white;
-    border-radius: 20px 20px;
-    display: inline;
-    padding: 5px 20px;
-    width: 20%;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  background-color: #fa8873;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 20px;
+  width: 150px;
+  margin: 0px auto;
+}
+.d-flex.center {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 
 /* 右半部 */
 .main a {
-    color: black;
+  color: black;
 }
 
 .bar i {
-    font-size: 60px;
-    padding-bottom: 20px;
+  font-size: 60px;
+  padding-bottom: 20px;
 }
 
 /* bar */
 .bar {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .bar a {
-    align-self: flex-end;
-    text-align: center;
+  align-self: flex-end;
+  text-align: center;
 }
 
 form {
-    width: 80%;
-    margin-left: 30%;
+  width: 80%;
+  margin-left: 30%;
 }
 
 /* 評價上方提示框 */
 .order_intro .box {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    background-color: #ffe1ce;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ffe1ce;
 }
 
 /* 尚未/已評價標題 */
 .main h4 {
-    text-align: center;
+  text-align: center;
 }
 
 /* 評價卡片 */
 .com_card1 {
-    background-color: white;
-    width: 100%;
-    height: 35vh;
-    border-radius: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
-
+ul {
+  padding-left: 20px;
+}
 .com_card1 h5 {
-    padding: 20px 0 0 20px;
+  padding: 20px 0 0 20px;
 }
-
-.com_card_photo {
-    float: left;
-    width: 20%;
-
+.com_card-intro {
+  margin-left: 50px;
 }
 
 .com_card_photo img {
-    width: 20vh;
-    margin-left: 40px;
-    border-radius: 20px;
+  width: 150px;
 }
 
 .com_card_intro {
-    float: right;
-    /* width: 80%; */
+  float: right;
+  /* width: 80%; */
 }
 
 .com_card_intro p {
-    text-align: center;
-
+  text-align: center;
 }
 
 /* 星級 */
-.give_stars p{
-    color: gray;
+.give_stars p {
+  color: gray;
 }
 
 .stars li {
-    display: inline-block;
-    color: #adadad;
-    font-size: 40px;
-    cursor: pointer;
-    list-style: none;
+  display: inline-block;
+  color: #adadad;
+  font-size: 30px;
+  cursor: pointer;
+  list-style: none;
 }
 
-span::before {
-    content: "您給出了";
-}
-span::after {
-    content: "顆星";
-}
 /* .stars ul{
     list-style: none;
 } */
@@ -160,22 +152,28 @@ span::after {
     content: "顆星";
 } */
 
-
-.give_stars p {
-    padding-right: 40px;
-}
-
 /* 評價按鈕 */
 .btn_com_send {
-    padding: 2px 50px;
-    box-shadow: 0 10px 20px #cacaca;
+  padding: 2px 50px;
+  box-shadow: 0 10px 20px #cacaca;
 }
 
 .com_card_bottom {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .com_card_bottom a {
-    color: grey;
-    margin-left: 60px;
+  color: grey;
+  margin-left: 60px;
+}
+@media screen and (max-width: 500px) {
+  .com_card-intro {
+    width: 100%;
+  }
+  .com_card1 {
+    flex-direction: column;
+  }
+  .com_card_photo {
+    text-align: center;
+  }
 }

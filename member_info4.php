@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="CSS/1.header.css">
     <link rel="stylesheet" href="CSS/2.footer.css">
     <link rel="stylesheet" href="CSS/3.btn_to_top.css">
-    <link rel="stylesheet" href="./CSS/member_info4new.css">
+    <link rel="stylesheet" href="./CSS/member_info4.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- JS link ----------------------------------->
@@ -466,73 +466,80 @@
                     <br>
 
                     <div class="com_cards">
-
+                        <h5>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</h5>
                         <div class="com_card1">
-                            <h5>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</h5>
+
                             <div class="com_card_photo">
                                 <img src="./img/212008_M1.jpeg">
                             </div>
+
                             <div class="com_card-intro">
                                 <h5>快速評論</h5>
                                 <div class="give_stars">
-                                    <div class="d-flex row">
-                                        <p>續航力： </p>
-                                        <ul class="stars row" style="list-style: none;">
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                        </ul>
-
-
-                                        <p>續航力：</p>
-                                        <ul class="stars row" style="list-style: none;">
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                        </ul>
-
+                                    <div class="row">
+                                        <div class="d-flex center">
+                                            <p>續航力： </p>
+                                            <ul class="stars" style="list-style: none;">
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex center ">
+                                            <p>續航力： </p>
+                                            <ul class="stars" style="list-style: none;">
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                            </ul>
+                                        </div>
                                     </div>
 
-                                    <div class="d-flex row">
-                                        <p>續航力： </p>
-                                        <ul class="stars row" style="list-style: none;">
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                        </ul>
-
-
-                                        <p>續航力：</p>
-                                        <ul class="stars row" style="list-style: none;">
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                            <li>★</li>
-                                        </ul>
-
+                                    <div class="row">
+                                        <div class="d-flex center">
+                                            <p>續航力： </p>
+                                            <ul class="stars" style="list-style: none;">
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex center">
+                                            <p>續航力： </p>
+                                            <ul class="stars" style="list-style: none;">
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                                <li>★</li>
+                                            </ul>
+                                        </div>
                                     </div>
 
-
-                                    <div class="com_card_bottom">
-                                        <button type="button" class="btn btn_com_send">送出</button>
-                                        <a href="#">評價更多<i class="fas fa-angle-double-right"></i></a>
-                                    </div>
                                 </div>
 
-                                <!-- 評論不需要訂單編號嗎？ -->
-                                <!-- <p>訂單編號：0531093022122</p>
-                        <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p> -->
-                            </div>
-                        </div>
 
-                        <div class="com_card1">
+                            </div>
+
+
+
+                            <!-- 評論不需要訂單編號嗎？ -->
+                            <!-- <p>訂單編號：0531093022122</p>
+                        <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p> -->
+                        </div>
+                    </div>
+                    <div class="com_card_bottom">
+                        <button type="button" class="btn btn_com_send">送出</button>
+                        <a href="#">評價更多<i class="fas fa-angle-double-right"></i></a>
+                    </div>
+
+                    <!-- <div class="com_card1">
                             <h5>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</h5>
                             <div class="com_card_photo">
                                 <img src="./img/212008_M1.jpeg">
@@ -587,150 +594,150 @@
                                 </div>
 
                                 <!-- 評論不需要訂單編號嗎？ -->
-                                <!-- <p>訂單編號：0531093022122</p>
+                    <!-- <p>訂單編號：0531093022122</p>
                         <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p> -->
-                            </div>
-                        </div>
+                    <!-- </div>
+                        </div> -->
 
-                    </div>
-
-
-
-
-                    <!-- 已評價 -->
-                    <br>
-                    <h4>已評價商品</h4>
-                    <br>
-
-                    <div class="com_cards">
-
-                        <div class="com_card1">
-                            <h5>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</h5>
-                            <div class="com_card_photo">
-                                <img src="./img/212008_M1.jpeg">
-                            </div>
-                            <div class="com_card-intro">
-                                <h5>快速評論</h5>
-                                <div class="in_stars">
-                                    <div class="d-flex row">
-                                        <p>續航力：
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                        <p>續航力：
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                        <p>續航力：
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                    </div>
-                                    <div class="d-flex row">
-                                        <p>續航力：
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                        <p>續航力：
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                    </div>
-
-                                    <div class="com_card_bottom">
-                                        <button type="button" class="btn btn_com_send">送出</button>
-                                        <a href="#">評價更多<i class="fas fa-angle-double-right"></i></a>
-                                    </div>
-                                </div>
-
-                                <!-- 評論不需要訂單編號嗎？ -->
-                                <!-- <p>訂單編號：0531093022122</p>
-                            <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p> -->
-                            </div>
-                        </div>
-
-                        <div class="com_card1">
-                            <h5>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</h5>
-                            <div class="com_card_photo">
-                                <img src="./img/212008_M1.jpeg">
-                            </div>
-                            <div class="com_card-intro">
-                                <h5>快速評論</h5>
-                                <div class="in_stars">
-                                    <div class="d-flex row">
-                                        <p>續航力：
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                        <p>續航力：
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                        <p>續航力：
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                    </div>
-                                    <div class="d-flex row">
-                                        <p>續航力：
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                        <p>續航力：
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle act_star"></i>
-                                            <i class="fas fa-circle"></i>
-                                            <i class="fas fa-circle"></i>
-                                        </p>
-                                    </div>
-
-                                    <div class="com_card_bottom">
-                                        <button type="button" class="btn btn_com_send">送出</button>
-                                        <a href="#">評價更多<i class="fas fa-angle-double-right"></i></a>
-                                    </div>
-                                </div>
-
-                                <!-- 評論不需要訂單編號嗎？ -->
-                                <!-- <p>訂單編號：0531093022122</p>
-                            <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p> -->
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
+
+
+
+
+                <!-- 已評價 -->
+                <br>
+                <h4>已評價商品</h4>
+                <br>
+
+                <!-- <div class="com_cards">
+
+                        <div class="com_card1">
+                            <h5>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</h5>
+                            <div class="com_card_photo">
+                                <img src="./img/212008_M1.jpeg">
+                            </div>
+                            <div class="com_card-intro">
+                                <h5>快速評論</h5>
+                                <div class="in_stars">
+                                    <div class="d-flex row">
+                                        <p>續航力：
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle"></i>
+                                        </p>
+                                        <p>續航力：
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                        </p>
+                                        <p>續航力：
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex row">
+                                        <p>續航力：
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                        </p>
+                                        <p>續航力：
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle act_star"></i>
+                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-circle"></i>
+                                        </p>
+                                    </div>
+
+                                    <div class="com_card_bottom">
+                                        <button type="button" class="btn btn_com_send">送出</button>
+                                        <a href="#">評價更多<i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <!-- 評論不需要訂單編號嗎？ -->
+                <!-- <p>訂單編號：0531093022122</p>
+                            <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p> -->
+                <!-- </div>
             </div>
 
-        </div>
+            <div class="com_card1">
+                <h5>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</h5>
+                <div class="com_card_photo">
+                    <img src="./img/212008_M1.jpeg">
+                </div>
+                <div class="com_card-intro">
+                    <h5>快速評論</h5>
+                    <div class="in_stars">
+                        <div class="d-flex row">
+                            <p>續航力：
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle"></i>
+                            </p>
+                            <p>續航力：
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </p>
+                            <p>續航力：
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </p>
+                        </div>
+                        <div class="d-flex row">
+                            <p>續航力：
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </p>
+                            <p>續航力：
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle act_star"></i>
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-circle"></i>
+                            </p>
+                        </div>
 
-        <!-- ↑↑↑ 內容結束 ↑↑↑ -->
+                        <div class="com_card_bottom">
+                            <button type="button" class="btn btn_com_send">送出</button>
+                            <a href="#">評價更多<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- 評論不需要訂單編號嗎？ -->
+                <!-- <p>訂單編號：0531093022122</p>
+                            <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p> -->
+            </div>
+            <!-- </div> 
+
+        </div>  -->
+        </div>
+    </div>
+
+    </div>
+
+    <!-- ↑↑↑ 內容結束 ↑↑↑ -->
 
     </div>
     <!-- 在這裡結束網頁撰寫 ----------------------->
@@ -1016,14 +1023,14 @@
                     let index = $(this).index();
                     // 依序將星星變成黃色
                     for (let i = 0; i <= index; i++) {
-                        $('.stars li').eq(i).css('color', '#f0ad4e');
+                        $(this).parent('.stars').find('li').eq(i).css('color', '#f0ad4e');;
                     }
                 }
             },
             function() {
                 // 滑鼠移開時變回灰色
                 if (!isClicked) {
-                    $('.stars li').css('color', '#adadad');
+                    $(this).css('color', '#adadad');
                 }
             }
         );
@@ -1031,15 +1038,16 @@
         // 點擊星星
         $('.stars li').click(function() {
             isClicked = true;
-            $('.stars li').css('color', '#adadad');
+            $(this).parent('.stars').find('li').css('color', '#adadad');
             let index = $(this).index();
             let value = ($(this).index()) + 1;
             // 依序將星星變成黃色
             for (let i = 0; i <= index; i++) {
-                $('.stars li').eq(i).css('color', '#f0ad4e');
+                $(this).parent('.stars').find('li').eq(i).css('color', '#f0ad4e');
+
             }
             // 顯示給予星星數
-            $('span').text(value);
+            // $('.star_val').val(value);
         })
     </script>
 

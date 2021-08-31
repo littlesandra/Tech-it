@@ -1,15 +1,17 @@
 * {
-    /* outline: 1px solid red; */
+  /* outline: 1px solid red; */
 }
-
+p {
+  margin: 5px !important;
+}
 .page {
-    display: flex;
+  display: flex;
 }
 
 /* 左半部 */
 .photo {
-    display: inline-block;
-    /* width: 200px;
+  display: inline-block;
+  /* width: 200px;
     height: 200px;
     border: 1px solid gray;
     border-radius: 50%;
@@ -17,190 +19,137 @@
 }
 
 .photo img {
-    object-fit: cover;
-    /* width: 100%; */
-    width: 200px;
-    height: 200px;
-    border: 1px solid gray;
-    border-radius: 50%;
+  object-fit: cover;
+  /* width: 100%; */
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  border-radius: 50%;
 }
 
 .personal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.personal>a {
-    color: black;
+.personal > a {
+  color: black;
 }
 
 .personal div {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .personal h4 {
-    margin: 10px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 .member_level {
-    background-color: #fa8873;
-    color: white;
-    border-radius: 20px 20px;
-    display: inline;
-    padding: 5px 20px;
-    width: 20%;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  background-color: #fa8873;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 20px;
+  width: 150px;
+  margin: 0px auto;
 }
 
 /* 右半部 */
 .main a {
-    color: black;
+  color: black;
 }
 
 .bar i {
-    font-size: 60px;
-    padding-bottom: 20px;
+  font-size: 60px;
+  padding-bottom: 20px;
 }
 
 /* bar */
 .bar {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.bar a {
-    align-self: flex-end;
-    text-align: center;
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: center;
 }
 
 form {
-    width: 80%;
-    margin-left: 30%;
+  width: 80%;
+  margin-left: 30%;
 }
-
 
 /* 訂單上方提示框 */
 .order_intro .box {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    background-color: #ffe1ce;
-
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ffe1ce;
 }
 
 /* 訂單記錄card */
 .order_card {
-    margin-top: 30px;
+  margin-top: 30px;
+  /* border: 1px solid gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
 
 .card1 {
-    background-color: white;
-    width: 100%;
-    height: 30vh;
-    border-radius: 20px;
-
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .card_photo {
-    float: left;
-    width: 20%;
-
+  margin-right: 50px;
 }
 
 .card_photo img {
-    width: 20vh;
-    margin: 35px;
-    border-radius: 20px;
+  width: 150px;
 }
 
 .card_intro {
-    float: right;
-    width: 70%;
+  float: right;
+  width: 70%;
 }
 
 .card_intro p {
-    text-align: center;
-    margin: 35px;
-    padding: 35px;
+  font-size: 12px;
+  text-align: center;
+  margin: 35px;
+  padding: 35px;
 }
 
 .to-com p {
-    color: gray;
+  color: gray;
 }
 
 .btn-to-com {
-    background-color: #a4a0cc;
-    margin-right: 60px;
-    padding: 10px 30px 10px 30px;
-    color: white;
+  background-color: #a4a0cc;
+  padding: 10px 30px 10px 30px;
+  color: white;
 }
 
 /* RWD */
-@media screen and (max-width: 375px) {
-/* .page{
-    display: none;
-} */
+@media screen and (max-width: 500px) {
+  .card_photo {
+    margin-right: 0px !important;
+  }
 
-    .card_center{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-    }
-
-    .card_center img{
-        width: 80px;
-    }
-    
-    .r_rpart{
-        display: flex;
-        align-items: flex-end; 
-    }
-    .r_rpart img{
-        width: 10px;
-        margin-right: 10px;
-    }
-    .m_rpart{
-        display: flex;
-        flex-direction: column;  
-        align-items: flex-end; 
-        
-    }
-    
-    .m_button1{
-        min-width: 10px!important;
-        height: 25px;
-        text-align: center;
-        padding: 5px 10px;
-        border-radius: 10px!important;
-        border: none;
-        background-color: #FFFFFF;
-        box-shadow: 0 15px 20px #BEBEBE;
-        display: flex;
-        align-items: center;
-        font-size: 10px;
-       
-    }
-
-    .m_button2{
-        min-width: 10px!important;
-        height: 25px;
-        text-align: center;
-        padding: 5px 5px;
-        display: flex;
-        align-items: center;
-        font-size: 10px;
-    }
-
-    
-}
-
-@media screen and (min-width: 375px) {
-    .moblie_part {
-        display: none;
-    }
+  .card_photo img {
+    width: 100px;
+  }
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .d-flex p {
+    margin: 0px !important;
+  }
+  a.col-3 {
+    padding: 0px !important;
+  }
 }
