@@ -1,3 +1,4 @@
+<?php require_once 'db.inc.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -430,19 +431,22 @@
     <div class="wrap">
 
         <!-- ↓↓↓ 內容開始 ↓↓↓ -->
-        <div class="page row">
-            <!-- 左半部 頭貼、名稱 -->
-            <div class="col-lg-4 col-12">
-                <div class="personal">
-                    <div class="photo">
-                        <img src="./img/messageImage_1628074308759.jpeg" alt="">
+        <?php if (isset($_SESSION['user_name'])) { ?>
+            <div class="page row">
+                <!-- 左半部 頭貼、名稱 -->
+                <div class="col-lg-4 col-12">
+                    <div class="personal">
+                        <div class="photo">
+                            <img src="./img/messageImage_1628074308759.jpeg" alt="">
+                        </div>
+                        <a class="d-sm-block d-md-none" href="">更改大頭貼</a>
+                        <h4 class="d-none d-lg-block">陳時中</h4>
+                        <div class="member_level d-none d-lg-block">一般會員</div>
                     </div>
-                    <a class="d-sm-block d-md-none" href="">更改大頭貼</a>
-                    <h4 class="d-none d-lg-block">陳時中</h4>
-                    <div class="member_level d-none d-lg-block">一般會員</div>
                 </div>
-            </div>
-
+            <?php
+        }
+            ?>
             <!-- 右半部頁面 -->
             <div class="col-lg-8 col-12">
                 <div class="main">
@@ -462,33 +466,35 @@
                     <div class="order_intro">
                         <div class="box">只要評論就送購物金！</div>
                     </div>
+                    <?php if (isset($_SESSION['user_name'])) { ?>
+                        <div class="order_card">
+                            <div class="card_photo">
+                                <img src="./img/212008_M1.jpeg">
+                            </div>
+                            <div class="card-intro">
+                                <div class="card1">
 
-                    <div class="order_card">
-                        <div class="card_photo">
-                            <img src="./img/212008_M1.jpeg">
-                        </div>
-                        <div class="card-intro">
-                            <div class="card1">
-
-                                <p>訂單編號：0531093022122</p>
-                                <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p>
-                                <br>
-                                <div class="to-com">
-                                    <div class="d-flex justify-content-between align-center">
-                                        <p>訂單成立時間：2021 / 05 / 31</p>
-                                        <button type="button" class="btn btn-to-com gotocomment">評論</button>
+                                    <p>訂單編號：0531093022122</p>
+                                    <p>Reborock石頭科技 掃地機器人二代 S5 Max(白/黑)</p>
+                                    <br>
+                                    <div class="to-com">
+                                        <div class="d-flex justify-content-between align-center">
+                                            <p>訂單成立時間：2021 / 05 / 31</p>
+                                            <button type="button" class="btn btn-to-com gotocomment">評論</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-
+                    <?php
+                    }
+                    ?>
 
                 </div>
             </div>
 
-        </div>
+            </div>
 
 
 

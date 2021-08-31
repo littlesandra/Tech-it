@@ -1,3 +1,4 @@
+<?php require_once 'db.inc.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -479,7 +480,7 @@
                                     <div class="row">
                                         <div class="d-flex center">
                                             <p>續航力： </p>
-                                            <ul class="stars" style="list-style: none;">
+                                            <ul class="stars" style="list-style: none;" id="ul_1">
                                                 <li>★</li>
                                                 <li>★</li>
                                                 <li>★</li>
@@ -487,9 +488,9 @@
                                                 <li>★</li>
                                             </ul>
                                         </div>
-                                        <div class="d-flex center ">
+                                        <div class="d-flex center">
                                             <p>續航力： </p>
-                                            <ul class="stars" style="list-style: none;">
+                                            <ul class="stars" style="list-style: none;" id="ul_2">
                                                 <li>★</li>
                                                 <li>★</li>
                                                 <li>★</li>
@@ -502,7 +503,7 @@
                                     <div class="row">
                                         <div class="d-flex center">
                                             <p>續航力： </p>
-                                            <ul class="stars" style="list-style: none;">
+                                            <ul class="stars" style="list-style: none;" id="ul_3">
                                                 <li>★</li>
                                                 <li>★</li>
                                                 <li>★</li>
@@ -512,7 +513,7 @@
                                         </div>
                                         <div class="d-flex center">
                                             <p>續航力： </p>
-                                            <ul class="stars" style="list-style: none;">
+                                            <ul class="stars" style="list-style: none;" id="ul_4">
                                                 <li>★</li>
                                                 <li>★</li>
                                                 <li>★</li>
@@ -1040,7 +1041,7 @@
             isClicked = true;
             $(this).parent('.stars').find('li').css('color', '#adadad');
             let index = $(this).index();
-            let value = ($(this).index()) + 1;
+            // let value = ($(this).index()) + 1;
             // 依序將星星變成黃色
             for (let i = 0; i <= index; i++) {
                 $(this).parent('.stars').find('li').eq(i).css('color', '#f0ad4e');
@@ -1049,6 +1050,68 @@
             // 顯示給予星星數
             // $('.star_val').val(value);
         })
+    </script>
+    <!-- <script src="custom_member.js"></script> -->
+    <script>
+        $('.btn_com_send').click(function(event) {
+            event.preventDefault();
+            //取得 button 的 jQuery 物件
+            // let ratebtn = $(this);
+            // console.log('tttttttt');
+            // $('#ul_1').css('background', '#f0ad4e');
+            let count1 = 0;
+            let count2 = 0;
+            let count3 = 0;
+            let count4 = 0;
+            // $('ul.stars:nth-child(1)')
+            // $('.give_stars ul:nth-child(2)').find('li').css('color', 'pink');
+            for (let i = 0; i < 5; i++) {
+                if ($('#ul_1').find('li').eq(i).css('color') == 'rgb(240, 173, 78)') {
+                    count1 = count1 + 1;
+                }
+            }
+            for (let i = 0; i < 5; i++) {
+                if ($('#ul_2').find('li').eq(i).css('color') == 'rgb(240, 173, 78)') {
+                    count2 = count2 + 1;
+                }
+            }
+            for (let i = 0; i < 5; i++) {
+                if ($('#ul_3').find('li').eq(i).css('color') == 'rgb(240, 173, 78)') {
+                    count3 = count3 + 1;
+                }
+            }
+            for (let i = 0; i < 5; i++) {
+                if ($('#ul_4').find('li').eq(i).css('color') == 'rgb(240, 173, 78)') {
+                    count4 = count4 + 1;
+                }
+            }
+            for (let i = 0; i < 5; i++) {
+                if ($('#ul_5').find('li').eq(i).css('color') == 'rgb(240, 173, 78)') {
+                    count5 = count5 + 1;
+                }
+            }
+            console.log(count1);
+
+            // 送出 post 請求，加入購物車
+            let objRate = {
+                // prod_id: ratebtn.attr('data-prod-id'),
+                order_id: 1,
+                prod_id: 1,
+                rate_A_score: count1,
+                rate_B_score: count2,
+                rate_C_score: count3,
+                rate_D_score: count4,
+                rate_E_score: count5
+
+            };
+            $.post("setRate.php", objRate, function(rbj) {
+                if (rbj['success']) {
+                    //成功訊息
+                    alert('評論成功');
+                }
+                console.log(rbj);
+            }, 'json');
+        });
     </script>
 
 </body>
